@@ -18,6 +18,10 @@ public class App {
 
 
         // 2. 사칙연산 기호(+, -, X, %)를 입력받기
+        System.out.print("사칙연산 기호를 입력하세요(+, -, X, %): ");
+        String operator = scanner.next();
+        char operatorC = operator.charAt(0);
+
 
         // 3. 위에서 입력받은 양의 정수 2개와 사칙연산 기호를 사용하여 연산을 진행한 후 결과값을 출력하기
 
