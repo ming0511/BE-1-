@@ -7,6 +7,9 @@ import java.util.List;
 public class Calculator {
 
     // 연산 결과를 저장하는 컬렉션 타입 필드를 가진 Calculator 클래스를 생성
+    private int num1;
+    private int num2;
+    private char operatorC;
     private List<Double> results = new ArrayList<>();
 
     // 사칙연산을 수행한 후, 결과값을 반환하는 메서드 구현
@@ -38,10 +41,10 @@ public class Calculator {
                 System.out.println("오류 발생");
         }
 
+        this.results.add(result);
+
         return result;
     }
-
-
 
     // 1) 양의 정수 2개(0 포함)와 연산 기호를 매개변수로 받아 사칙연산(+, -, X, %) 기능을 수행한 후
     // 2) 결과 값을 반환하는 메서드와 연산 결과를 저장하는 컬렉션 타입 필드를 가진 Calculator 클래스를 생성
