@@ -9,6 +9,15 @@ public class Calculator {
     // 2. 연산 결과를 저장하는 컬렉션 타입 필드를 가진 Calculator 클래스를 생성
     private List<Double> results = new ArrayList<>();
 
+    // TODO: 1. 간접 접근을 통해 필드에 접근하여 가져올 수 있도록 구현
+    public List<Double> getResults() {
+        return results;
+    }
+
+
+    // TODO: 2. 간접 접근을 통해 필드에 접근하여 수정할 수 있도록 구현
+
+
     // 1. 사칙연산을 수행한 후, 결과값을 반환하는 메서드 구현
     public double calculate(int num1, int num2, char operatorC){
         double result = 0;
