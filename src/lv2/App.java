@@ -1,5 +1,7 @@
 package lv2;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class App {
@@ -29,7 +31,14 @@ public class App {
 
             // TODO: App 클래스의 main 메서드에서 Calculator 클래스의 연산 결과를 저장하고 있는 컬렉션 필드에 직접 접근하지 못하도록 수정(캡슐화)
             // TODO: 3. App 클래스의 main 메서드에서 위에서 구현한 메서드를 활용
+            List<Double> results = calculator.getResults();
+            System.out.println("results = " + results);
 
+            List<Double> emptyArrayList = new ArrayList<>();
+            calculator.setResults(emptyArrayList);
+
+            results = calculator.getResults();
+            System.out.println("results = " + results);
 
 
             System.out.println("더 계산하시겠습니까? (exit 입력 시 종료): ");

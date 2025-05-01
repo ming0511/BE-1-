@@ -15,7 +15,7 @@ public class Calculator {
     }
 
 
-    // TODO: 2. 간접 접근을 통해 필드에 접근하여 수정할 수 있도록 구현
+    // 2. 간접 접근을 통해 필드에 접근하여 수정할 수 있도록 구현
     public void setResults(List<Double> results) {
         this.results = results;
     }
