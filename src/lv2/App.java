@@ -29,8 +29,8 @@ public class App {
             // lV 1에서 구현한 App 클래스의 main 메서드에 Calculator 클래스가 활용될 수 있도록 수정
             calculator.calculate(num1, num2, operatorC);
 
-            // TODO: App 클래스의 main 메서드에서 Calculator 클래스의 연산 결과를 저장하고 있는 컬렉션 필드에 직접 접근하지 못하도록 수정(캡슐화)
-            // TODO: 3. App 클래스의 main 메서드에서 위에서 구현한 메서드를 활용
+            // App 클래스의 main 메서드에서 Calculator 클래스의 연산 결과를 저장하고 있는 컬렉션 필드에 직접 접근하지 못하도록 수정(캡슐화)
+            // 3. App 클래스의 main 메서드에서 위에서 구현한 메서드를 활용
             List<Double> results = calculator.getResults();
             System.out.println("results = " + results);
 
