@@ -2,7 +2,7 @@ package lv1;
 
 import java.util.Scanner;
 
-public class App {
+public class AppLv1 {
 
     // Lv 1. 클래스 없이 기본적인 연산을 수행할 수 있는 계산기 만들기
     public static void main(String[] args) {

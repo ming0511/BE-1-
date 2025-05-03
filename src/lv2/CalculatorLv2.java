@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 // 사칙연산을 수행 후, 결과값 반환 메서드 구현 & 연산 결과를 저장하는 컬렉션 타입 필드를 가진 Calculator 틀래스를 생성
-public class Calculator {
+public class CalculatorLv2 {
 
     // 2. 연산 결과를 저장하는 컬렉션 타입 필드를 가진 Calculator 클래스를 생성
     private List<Double> results = new ArrayList<>();

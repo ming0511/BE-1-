@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class App {
+public class AppLv2 {
 
     // Lv 2. 클래스를 적용해 기본적인 연산을 수행할 수 있는 계산기 만들기
     public static void main(String[] args) {
 
-        Calculator calculator = new Calculator();
+        CalculatorLv2 calculator = new CalculatorLv2();
         while (true) {
             // 1. 양의 정수(0 포함)를 입력받기
             Scanner scanner = new Scanner(System.in);
