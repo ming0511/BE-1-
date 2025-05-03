@@ -55,8 +55,8 @@ public class AppLv1 {
                     System.out.println("오류 발생");
             }
 
-            System.out.println("더 계산하시겠습니까? (exit 입력 시 종료): ");
-            String msg = scanner.nextLine();
+            System.out.print("더 계산하시겠습니까? (exit 입력 시 종료): ");
+            String msg = scanner.next();
 
             if (msg.equals("exit")){
                 System.out.println("종료합니다.");
