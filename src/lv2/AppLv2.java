@@ -11,7 +11,7 @@ public class AppLv2 {
 
         CalculatorLv2 calculator = new CalculatorLv2();
         while (true) {
-            // 1. 양의 정수(0 포함)를 입력받기
+            // 양의 정수(0 포함) 입력받기
             Scanner scanner = new Scanner(System.in);
 
             System.out.print("첫 번째 숫자를 입력하세요(양의 정수(0 포함)): ");
@@ -21,28 +21,37 @@ public class AppLv2 {
             int num2 = scanner.nextInt();
 
 
-            // 2. 사칙연산 기호(+, -, X, %)를 입력받기
+            // 사칙연산 기호(+, -, X, %) 입력받기
             System.out.print("사칙연산 기호를 입력하세요(+, -, X, %): ");
             char operatorC = scanner.next().charAt(0);
 
 
-            // lV 1에서 구현한 App 클래스의 main 메서드에 Calculator 클래스가 활용될 수 있도록 수정
-            calculator.calculate(num1, num2, operatorC);
+            // Calculator 클래스 활용
+            double result = calculator.calculate(num1, num2, operatorC);
+            System.out.println("result = " + result);
 
             // App 클래스의 main 메서드에서 Calculator 클래스의 연산 결과를 저장하고 있는 컬렉션 필드에 직접 접근하지 못하도록 수정(캡슐화)
-            // 3. App 클래스의 main 메서드에서 위에서 구현한 메서드를 활용
+            // calculator.results;
+
+            // getter 활용
             List<Double> results = calculator.getResults();
             System.out.println("results = " + results);
 
+            // setter 활용
             List<Double> emptyArrayList = new ArrayList<>();
             calculator.setResults(emptyArrayList);
 
             results = calculator.getResults();
             System.out.println("results = " + results);
 
+            // removeResult 활용
+            calculator.removeResult();
 
-            System.out.println("더 계산하시겠습니까? (exit 입력 시 종료): ");
-            String msg = scanner.nextLine();
+            results = calculator.getResults();
+            System.out.println("results = " + results);
+
+            System.out.print("더 계산하시겠습니까? (exit 입력 시 종료): ");
+            String msg = scanner.next();
 
             if (msg.equals("exit")){
                 System.out.println("종료합니다.");
@@ -50,6 +59,7 @@ public class AppLv2 {
             }
 
         }
+
         // 4. 반복문을 사용하되, 반복의 종류를 알려주는 "exit" 문자열을 입력하기 전까지 무한으로 계산을 진행할 수 있도록 소스 코드를 수정하기
 
     }
